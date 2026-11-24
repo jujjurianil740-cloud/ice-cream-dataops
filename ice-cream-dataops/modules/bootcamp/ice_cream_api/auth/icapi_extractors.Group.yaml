@@ -1,11 +1,13 @@
 name: icapi_extractors
+
 sourceId: {{icapi_extractors_source_id}}
+
 capabilities:
   - datasetsAcl:
       actions: [READ]
       scope:
         idScope:
-          ids: [{{icapi_ds_external_id}}]
+          ids: [{{ icapi_ds_external_id }}]
   - dataModelInstancesAcl:
       actions: [READ, WRITE]
       scope:
